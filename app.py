@@ -196,7 +196,7 @@ def model(origin, destination, weather, vehicleType, weekDay):
     print(X_u)
     print(X_l)
 
-    filename_u = './Data/u_model.sav'
+    filename_u = './data/u_model.sav'
     loaded_model_u = pickle.load(open(filename_u, 'rb'))
 
     print(loaded_model_u.predict(X_u))
@@ -205,7 +205,7 @@ def model(origin, destination, weather, vehicleType, weekDay):
 
     print(prediction_u)
 
-    filename_l = './Data/l_model.sav'
+    filename_l = './data/l_model.sav'
     loaded_model_l = pickle.load(open(filename_l, 'rb'))
 
     print(loaded_model_l.predict(X_l))
